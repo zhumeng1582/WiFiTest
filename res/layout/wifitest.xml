@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tVSSID"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="SSID:" />
+
+        <EditText
+            android:id="@+id/eTSSID"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="RDM1F" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/eTPassword"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tVMinValue"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="报警值" />
+
+        <EditText
+            android:id="@+id/eTMinValue"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:numeric="signed"
+            android:text="-50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="检测" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+        <CheckBox
+            android:id="@+id/cBRemberPara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="记住参数" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tVConnectState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:id="@+id/tVPingState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/iVPass"
+        android:layout_width="154dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+</LinearLayout>
